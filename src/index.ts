@@ -2,7 +2,7 @@ import * as vscode from 'vscode';
 import { XelDocumentContextProvider } from './xelContentProvider';
 import * as path from 'path';
 
-function activate(context: vscode.ExtensionContext): void {
+export function activate(context: vscode.ExtensionContext): void {
 	const provider = new XelDocumentContextProvider(context);
 	const registerProvider = vscode.workspace.registerTextDocumentContentProvider('xel-preview', provider);
 

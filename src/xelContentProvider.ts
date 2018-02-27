@@ -5,6 +5,6 @@ export class XelDocumentContextProvider implements vscode.TextDocumentContentPro
 	public constructor(private _context: vscode.ExtensionContext) { }
 
 	public provideTextDocumentContent(uri: vscode.Uri, token: vscode.CancellationToken): vscode.ProviderResult<string> {
-		throw new Error("Method not implemented.");
+		return '<html><body><div>val</div><body></html>'
 	}
 }
